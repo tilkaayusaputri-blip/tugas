@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Sumatera Barat - Gabungan</title>
+
+    <style>
+        /* Pengaturan Dasar */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header dan Navigasi */
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0f2f1; /* Garis pemisah tipis */
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00897b; /* Warna teal/hijau gelap */
+        }
+
+        .nav-menu a {
+            color: #00897b;
+            text-decoration: none;
+            padding: 5px 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .nav-menu a:hover {
+            color: #004d40;
+        }
+        
+        .main-title-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .main-title-section h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .main-title-section p {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        /* Galeri 3 Kolom */
+        .grid-3-col {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+
+        .image-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-item p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* Judul Sub-section */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 30px;
+        }
+
+        .section-header h2 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+
+        .section-header .nav-menu-sub a {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+        
+        .section-description {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        /* Tata Letak Konten 2 Kolom (Gambar Kiri/Kanan) */
+        .content-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .content-image {
+            width: 40%;
+            flex-shrink: 0;
+        }
+
+        .content-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-text {
+            width: 60%;
+        }
+
+        /* Untuk baris dengan gambar di kanan */
+        .content-row.image-right {
+            flex-direction: row-reverse;
+        }
+        
+        /* Gambar Kecil Berdampingan (Rendang Tiram) */
+        .grid-3-small {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .grid-3-small img {
+            width: calc(33.33% - 7px); /* 3 gambar dengan jarak 10px */
+        }
+        
+        /* Media Query untuk Responsif */
+        @media (max-width: 600px) {
+            .header-top, .nav-menu {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-menu a {
+                padding: 5px 10px;
+            }
+            .grid-3-col {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .image-item {
+                width: 100%;
+            }
+            .content-row {
+                flex-direction: column;
+            }
+            .content-image, .content-text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header-top">
+            <div class="logo">KULINERY</div>
+            <nav class="nav-menu">
+                <a href="#beranda">Beranda</a>
+                <a href="#makanan">Makanan</a>
+                <a href="#cemilan">Camilan</a>
+                <a href="#minuman">Minuman</a>
+            </nav>
+        </header>
+        
+        <section id="makanan">
+            <div class="main-title-section">
+                <h1>KULINERY: Warisan Lezat Sumatera Barat</h1>
+                <p>Selamat datang di KULINERY, situs yang mengangkat kekayaan rasa kuliner khas Sumatera Barat. Di sini kamu bisa menemukan informasi tentang beberapa makanan dan minuman tradisional yang ada di Sumatera Barat.</p>
+            </div>
+
+            <div class="grid-3-col">
+                <div class="image-item">
+                    <img src="Rendang-1 1.png" alt="Rendang-1 1.png">
+                    <p>Rendang</p>
+                </div>
+                <div class="image-item">
+                    <img src="WhatsApp Image 2025-09-29 at 19.23.15 1.png" alt="Rendang Lokan">
+                    <p>Rendang Lokan</p>
+                </div>
+                <div class="image-item">
+                    <img src="Frame 1.png" alt="Sate Padang">
+                    <p>Sate Padang</p>
+                </div>
+            </div>
+
+            <p class="section-description">Berikut beberapa hidangan ikonik dari Sumatera Barat yang wajib anda ketahui mulai dari beberapa makanan atau jajanan tradisional hingga minuman yang sangat jarang di ketahui oleh masyarakat tentunya.</p>
+
+            <div class="section-header">
+                <h2>Beberapa Jenis Menu Makanan</h2>
+                <nav class="nav-menu-sub">
+                    <a href="#beranda">Beranda</a>
+                    <a href="#makanan">Makanan</a>
+                    <a href="#cemilan">Camilan</a>
+                    <a href="#minuman">Minuman</a>
+                </nav>
+            </div>
+            
+            <div class="content-row">
+                <div class="content-image">
+                    <img src="WhatsApp Image 2025-09-29 at 19.23.15 3.png" alt="Rendang Lokan">
+                </div>
+                <div class="content-text">
+                    <h2>Rendang Lokan</h2>
+                    <p>Rendang Lokan merupakan salah satu olahan rendang yang berasal dari daerah pesisir Sumatera Barat yang menggunakan kerang lokan (kerang sungail sebagai bahan utamanya, berbeda dengan rendang daging sapi atau ayam yang lebih umum.</p>
+                </div>
+            </div>
+
+            <div class="content-row image-right">
+                <div class="content-image">
+                    <div class="grid-3-small">
+                         <img src="WhatsApp Image 2025-09-30 at 12.57.15 (1) 1 (1).png" alt="Tiram 1">
+                         <img src="WhatsApp Image 2025-09-30 at 12.57.15 (2) 1.png" alt="Tiram 2">
+                         <img src="WhatsApp Image 2025-09-30 at 12.57.15 1 (1).png" alt="Tiram 3">
+                    </div>
+                </div>
+                <div class="content-text">
+                    <h2>Rendang Tiram</h2>
+                    <p>Rendang Tiram juga merupakan salah satu produk olahan yang berasal dari pesisir provinsi. Tiram merupakan salah satu jenis kerang air payau yang banyak di temui di daerah tersebut.</p>
+                </div>
+            </div>
+            
+            <div class="content-row">
+                <div class="content-image">
+                    <img src="WhatsApp Image 2025-09-29 at 19.23.15 4.png" alt="Sambalado Tanak">
+                </div>
+                <div class="content-text">
+                    <h2>Sambalado Tanak</h2>
+                    <p>Sambalado tanak merupakan salah satu dari sekian banyak sambalado khas Minangkabau. Sambal ini dapat dijumpai di sejumlah daerah Sumbar dengan beragam varian. Selain racikan kunci yang disertakan, sambalado ini juga memiliki isian berupa telur puyuh atau telur ayam, pete, dan ikan teri asin sebagai pelengkap.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cemilan">
+            <div class="section-header">
+                <h2>Beberapa Jenis Menu Camilan</h2>
+                <nav class="nav-menu-sub">
+                    <a href="#beranda">Beranda</a>
+                    <a href="#makanan">Makanan</a>
+                    <a href="#cemilan">Camilan</a>
+                    <a href="#minuman">Minuman</a>
+                </nav>
+            </div>
+            
+            <p class="section-description">Camilan khas Sumatera Barat dikenal dengan cita rasa yang gurih, manis, dan kaya rempah. Setiap camilannya mencerminkan budaya Minangkabau yang sarat akan tradisi dan kelezatan kuliner.</p>
+
+            <div class="content-row">
+                <div class="content-image">
+                    <img src="images 3.png" alt="Karupuak Jangek">
+                </div>
+                <div class="content-text">
+                    <h2>Karupuak Jangek/Kerupuk Kulit</h2>
+                    <p>Merupakan camilan tradisional khas Minangkabau yang terbuat dari kulit sapi atau kerbau, yang diolah dengan dibumbui rempah, dijemur hingga kering, kemudian digoreng hingga mengembang dan renyah. Terbuat dari kulit sapi atau kerbau pilihan yang telah melalui proses pembersihan dan pengeringan.</p>
+                </div>
+            </div>
+
+            <div class="content-row image-right">
+                <div class="content-image">
+                    <img src="images 1.png" alt="Karupuak Sanjai">
+                </div>
+                <div class="content-text">
+                    <h2>Karupuak Sanjai</h2>
+                    <p>Terbuat dari singkong yang di parut tipis kemudian digoreng hingga renyah, kemudian dibumbui dengan bumbu khas Minangkabau. Menawarkan kombinasi rasa gurih dan singkong dan rasa pedas dari bumbu balado, menciptakan sensasi ketagihan bagi penikmatnya.</p>
+                </div>
+            </div>
+            
+            <div class="content-row">
+                <div class="content-image">
+                    <img src="images 3 (1).png" alt="Kue Bika">
+                </div>
+                <div class="content-text">
+                    <h2>Kue Bika</h2>
+                    <p>Dibuat dari adonan tepung beras, kelapa parut, santan, dan gula, lalu dibakar di atas tungku dengan alas daun Waru atau daun pisang menghasilkan aroana manis gurih dan khas. Proses pemanggangan mengggunakan arang atau kayu bakar, kosong ditumpuk dengan bagian lain di atasnya untuk pemanasan merata dari bawah dan atas.</p>
+                </div>
+            </div>
+            
+            <div class="content-row image-right">
+                <div class="content-image">
+                    <img src="Resep-Salalauak.width-500.format-webp 1.png" alt="Sala Lauak">
+                </div>
+                <div class="content-text">
+                    <h2>Sala Lauak</h2>
+                    <p>Camilan goreng khas dari Pariaman, yang terbuat dari adonan tepung beras, ikan, dan bumbu. Bumbu rempah seperti bawang putih, kunyit, jahe, dan daun kunyit. Makanan ini memiliki tekstur renyah di luar dan lembut di dalam, serta rasa gurih dan wangi yang khas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="minuman">
+            <div class="section-header">
+                <h2>Beberapa Jenis Menu Minuman</h2>
+                <nav class="nav-menu-sub">
+                    <a href="#beranda">Beranda</a>
+                    <a href="#makanan">Makanan</a>
+                    <a href="#cemilan">Camilan</a>
+                    <a href="#minuman">Minuman</a>
+                </nav>
+            </div>
+            
+            <p class="section-description">Minuman khas Sumatera Barat yang populer meliputi Teh Talua (teh dengan kuning telur untuk stamina), Aia Aka (minuman kesehatan dari cincau), Aia Kawa Daun (kopi dari daun kopi yang disangrai), dan Es Tebak (minuman manis dari tepung beras dengan santan dan sirup gula merah).</p>
+
+            <div class="content-row">
+                <div class="content-image">
+                    <img src="WhatsApp Image 2025-09-29 at 19.23.15 5.png" alt="Teh Talua">
+                </div>
+                <div class="content-text">
+                    <h2>Teh Talua</h2>
+                    <p>Teh talua adalah minuman tradisional khas dari Sumatera Barat yang terbuat dari campuran teh kental, kuning telur (biasanya ayam kampung atau bebek), gula, dan sedikit perasan jeruk nipis. Minuman ini dikenal kaya akan nutrisi, memberikan energi, dan memiliki tekstur lembut dengan rasa manis, gurih, dan sedikit asam karena campuran jeruk nipisnya.</p>
+                </div>
+            </div>
+
+            <div class="content-row image-right">
+                <div class="content-image">
+                    <img src="download 4.png" alt="Es Tebak">
+                </div>
+                <div class="content-text">
+                    <h2>Es Tebak</h2>
+                    <p>Minuman ini menawarkan kombinasi rasa manis dan gurih dengan tekstur kenyal dari tebak dan bahan pelengkap lainnya, serta sangat menyegarkan. Bentuknya mirip cendol atau dawet, namun berwarna putih. Dibuat dari tepung beras ketan, tepung sagu, air garam, dan kapur sirih, lalu dicetak tipis seperti cendol.</p>
+                </div>
+            </div>
+            
+            <div class="content-row">
+                <div class="content-image">
+                    <img src="download 3.png" alt="Ampiang Dadih">
+                </div>
+                <div class="content-text">
+                    <h2>Ampiang Dadih</h2>
+                    <p>Terdiri dari campuran dadih (susu kerbau yang difermentasi dalam bambu) dan ampiang (emping ketan), disajikan dengan tambahan gula merah cair dan parutan kelapa, memiliki cita rasa manis dan asam dari dadih yang mirip yogurt, serta tekstur lembut dadih yang berpadu dengan gurihnya ampiang.</p>
+                </div>
+            </div>
+            
+            <div class="content-row image-right">
+                <div class="content-image">
+                    <img src="download 5.png" alt="Aia Aka">
+                </div>
+                <div class="content-text">
+                    <h2>Aia Aka</h2>
+                    <p>Dibuat dari perasan daun cincau yang dibiarkan mengental, bukan dari akar tanaman. Minuman ini kemudian dicampur dengan air daun kacang atau santan, gula aren, dan kadang diberi perasan jeruk nipis. Meskipun namanya secara harfiah berarti "air akar", minuman ini sebenarnya tidak terbuat dari akar.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer style="text-align: center; font-size: 12px; color: #aaa; padding: 20px 0;">
+            &copy; 2025 KULINERY. Warisan Lezat Sumatera Barat.
+        </footer>
+    </div>
+</body>
+</html>
